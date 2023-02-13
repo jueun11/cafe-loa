@@ -1,0 +1,44 @@
+// *pc
+.display_tablet {
+  display: none;
+}
+
+.display_mobile {
+  display: none;
+}
+.display_pc {
+  display: flex;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 200vh;
+}
+// *타블렛
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .display_pc {
+    display: none;
+  }
+  .display_mobile {
+    display: none;
+  }
+  .display_tablet {
+    display: flex;
+  }
+}
+
+// *모바일
+@media all and (max-width: 768px) {
+  .display_pc {
+    display: none;
+  }
+  .display_tablet {
+    display: none;
+  }
+  .display_mobile {
+    display: flex;
+  }
+}

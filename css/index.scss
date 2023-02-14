@@ -9,13 +9,112 @@
 .display_pc {
   display: flex;
 }
-* {
-  box-sizing: border-box;
-}
+
 body {
   width: 100vw;
   overflow-x: hidden;
-  height: 200vh;
+  & > #wrapper {
+    width: 100vw;
+    // ?상단 배너 시작
+    & > section:nth-child(4) {
+      width: 100vw;
+      height: 87vh;
+      background-color: aquamarine;
+      background-image: url("../img/main/main_top_bg.jpg");
+      margin-top: 72px;
+      background-position: center top;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        & > h3 {
+          font-weight: 700;
+          color: #fff;
+          letter-spacing: 5px;
+          margin-bottom: 30px;
+        }
+        & > h1 {
+          color: #fff;
+          font-weight: 700;
+          font-size: 96px;
+          letter-spacing: 22px;
+          margin-bottom: 40px;
+        }
+        & > .line {
+          width: 800px;
+          margin-bottom: 40px;
+        }
+        & > p {
+          text-align: center;
+          color: #fff;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    // !상단 배너 끝
+    // ? about cafe loa 시작
+    & > section:nth-child(5) {
+      margin-top: 200px;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      & > div {
+        width: 1200px;
+        & > div:nth-child(1) {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+        }
+        & > div:nth-child(2) {
+          margin-top: 110px;
+          display: flex;
+          justify-content: space-between;
+          & > article:nth-child(1) {
+            width: 486px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & > div:nth-child(1) {
+              & > h1:nth-child(2) {
+                margin-top: 15px;
+                margin-bottom: 30px;
+              }
+            }
+            & > div:nth-child(2) {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 230px;
+              margin-top: -100px;
+            }
+            & > div:nth-child(3) {
+              width: 282px;
+              height: 70px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0 30px;
+              border: 1px solid black;
+            }
+          }
+          & > article:nth-child(2) {
+            width: 588px;
+            height: 544px;
+            background-color: rgb(75, 75, 75);
+          }
+        }
+      }
+    }
+    // ! about cafe loa 끝
+  }
 }
 // *타블렛
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -27,6 +126,113 @@ body {
   }
   .display_tablet {
     display: flex;
+  }
+
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    & > #wrapper {
+      width: 100vw;
+      // ?상단 배너 시작
+      & > section:nth-child(4) {
+        width: 100vw;
+        height: 70vh;
+        background-image: url("../img/main/main_top_bg.jpg");
+        margin-top: 72px;
+        background-position: center top;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 40px;
+          & > h3 {
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 5px;
+            margin-bottom: 30px;
+          }
+          & > h1 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 70px;
+            letter-spacing: 22px;
+            margin-bottom: 40px;
+          }
+          & > .line {
+            width: 70vw;
+            margin-bottom: 40px;
+          }
+          & > p {
+            text-align: center;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      // !상단 배너 끝
+      // ? about cafe loa 시작
+      & > section:nth-child(5) {
+        margin-top: 15vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 0 36px;
+        & > div {
+          width: 100%;
+          & > div:nth-child(1) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          & > div:nth-child(2) {
+            margin-top: 7vh;
+            display: flex;
+            justify-content: space-between;
+            & > article:nth-child(1) {
+              width: 44vw;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              & > div:nth-child(1) {
+                & > h1:nth-child(2) {
+                  margin-top: 15px;
+                  margin-bottom: 30px;
+                }
+              }
+              & > div:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 25vh;
+                margin-top: -5vh;
+              }
+              & > div:nth-child(3) {
+                width: 260px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 30px;
+                border: 1px solid black;
+              }
+            }
+            & > article:nth-child(2) {
+              width: 44vw;
+              height: 45vh;
+              background-color: rgb(75, 75, 75);
+            }
+          }
+        }
+      }
+      // ! about cafe loa 끝
+    }
   }
 }
 
@@ -40,5 +246,112 @@ body {
   }
   .display_mobile {
     display: flex;
+  }
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    & > #wrapper {
+      width: 100vw;
+      // ?상단 배너 시작
+      & > section:nth-child(4) {
+        width: 100vw;
+        height: 40vh;
+        background-image: url("../img/main/main_top_bg.jpg");
+        margin-top: 50px;
+        background-position: center top;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 40px;
+          & > h3 {
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+          }
+          & > h1 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 32px;
+            letter-spacing: 15px;
+            margin-bottom: 15px;
+          }
+          & > .line {
+            width: 70vw;
+            border-bottom: 2px solid;
+          }
+        }
+      }
+      // !상단 배너 끝
+      // ? about cafe loa 시작
+      & > section:nth-child(5) {
+        margin-top: 15vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 0 24px;
+        & > div {
+          width: 100%;
+          & > div:nth-child(1) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          & > div:nth-child(2) {
+            margin-top: 7vh;
+            display: flex;
+            flex-direction: column-reverse;
+            & > article:nth-child(1) {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 7vh;
+              & > div:nth-child(1) {
+                width: 100%;
+                & > h1:nth-child(2) {
+                  margin-top: 12px;
+                  margin-bottom: 2vh;
+                }
+              }
+              & > div:nth-child(2) {
+                width: 100%;
+                margin-top: 1vh;
+                display: flex;
+                & > p {
+                  margin-top: 2vh;
+                }
+              }
+              & > div:nth-child(3) {
+                margin-top: 20vh;
+                width: 140px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+                & > div > i {
+                  display: none;
+                }
+              }
+            }
+            & > article:nth-child(2) {
+              width: 100%;
+              height: 200px;
+              background-color: rgb(75, 75, 75);
+            }
+          }
+        }
+      }
+      // ! about cafe loa 끝
+    }
   }
 }

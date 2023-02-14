@@ -3,3 +3,135 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+//* pc
+
+:root {
+  --smallFont: 16px;
+  --regularFont: 20px;
+  --LargeFont: 32px;
+  --LargeFontPlus: 36px;
+}
+.line {
+  border-bottom: 3px solid;
+  // border-image: linear-gradient(
+  //   to right,
+  //   rgba(253, 230, 182, 0),
+  //   rgba(253, 230, 182, 1),
+  //   rgba(253, 230, 182, 0)
+  // );
+  border-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  border-image-slice: 1;
+}
+h1 {
+  font-size: var(--LargeFontPlus);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--LargeFont);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--regularFont);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--smallFont);
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+  font-weight: 500;
+}
+.lineBlack {
+  width: 78px;
+  border-bottom: 1px solid #000;
+  margin-top: 15px;
+}
+// *태블릿
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .line {
+    border-bottom: 2px solid;
+    // border-image: linear-gradient(
+    //   to right,
+    //   rgba(253, 230, 182, 0),
+    //   rgba(253, 230, 182, 1),
+    //   rgba(253, 230, 182, 0)
+    // );
+    border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0)
+    );
+    border-image-slice: 1;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: var(--smallFont);
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}
+
+// *모바일
+@media all and (max-width: 768px) {
+  .line {
+    border-bottom: 1px solid;
+    // border-image: linear-gradient(
+    //   to right,
+    //   rgba(253, 230, 182, 0),
+    //   rgba(253, 230, 182, 1),
+    //   rgba(253, 230, 182, 0)
+    // );
+    border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0)
+    );
+    border-image-slice: 1;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: var(--smallFont);
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}

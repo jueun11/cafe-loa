@@ -2,4 +2,99 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --smallFont: 16px;
+  --regularFont: 20px;
+  --LargeFont: 32px;
+  --LargeFontPlus: 36px;
+}
+
+.line {
+  border-bottom: 3px solid;
+  -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  border-image-slice: 1;
+}
+
+h1 {
+  font-size: var(--LargeFontPlus);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--LargeFont);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--regularFont);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--smallFont);
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.lineBlack {
+  width: 78px;
+  border-bottom: 1px solid #000;
+  margin-top: 15px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .line {
+    border-bottom: 2px solid;
+    -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+       border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    border-image-slice: 1;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p {
+    font-size: var(--smallFont);
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}
+@media all and (max-width: 768px) {
+  .line {
+    border-bottom: 1px solid;
+    -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+       border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    border-image-slice: 1;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  p {
+    font-size: var(--smallFont);
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=from.css.map */

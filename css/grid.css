@@ -29,6 +29,7 @@
     height: 100vh;
     z-index: 50;
     position: fixed;
+    top: 0;
   }
   #tablet_grid > div {
     display: grid;
@@ -58,6 +59,8 @@
     height: 100vh;
     z-index: 50;
     position: fixed;
+    top: 0;
+    left: 0;
   }
   #mobile_grid > div {
     margin-left: 24px;

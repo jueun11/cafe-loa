@@ -31,6 +31,7 @@
     height: 100vh;
     z-index: 50;
     position: fixed;
+    top: 0;
     & > div {
       display: grid;
       width: 100vw;
@@ -62,6 +63,8 @@
     height: 100vh;
     z-index: 50;
     position: fixed;
+    top: 0;
+    left: 0;
     & > div {
       margin-left: 24px;
       margin-right: 24px;

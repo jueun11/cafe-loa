@@ -19,7 +19,6 @@ body {
     & > section:nth-child(4) {
       width: 100vw;
       height: 87vh;
-      background-color: aquamarine;
       background-image: url("../img/main/main_top_bg.jpg");
       margin-top: 72px;
       background-position: center top;
@@ -114,6 +113,129 @@ body {
       }
     }
     // ! about cafe loa 끝
+    // ? menu banner시작
+    & > section:nth-child(6) {
+      margin-top: 200px;
+      width: 100vw;
+      height: 330px;
+      background-image: url("../img/main/menu_banner.png");
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > div {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          & > .line {
+            margin: 30px 0;
+            width: 800px;
+            border-bottom: 1px solid;
+          }
+          & > div:nth-child(1) {
+            position: relative;
+            left: 100px;
+          }
+          & > div:nth-child(3) {
+            position: relative;
+            left: 200px;
+          }
+          & > div {
+            color: #fff;
+            margin-right: 36px;
+            & > h1:nth-child(1) {
+              margin-bottom: 10px;
+            }
+            & > p {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+    // ! menu banner 끝
+    // ? menu 시작
+    & > section:nth-child(7) {
+      // margin-top: 50px;
+      padding-top: 200px;
+      padding-bottom: 100px;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      background-image: url("../img/main/been_bg_pc.png");
+      background-position: center bottom;
+      background-size: cover;
+      & > div {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > div:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        & > #bg-beens {
+          & > div:nth-child(1) {
+          }
+        }
+        & > #menu-list {
+          width: 1200px;
+          margin-top: 110px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 24px;
+          & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & > div:nth-child(1) {
+              border-radius: 50%;
+              width: 282px;
+              height: 282px;
+              margin-bottom: 25px;
+              box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
+              background-position: center bottom;
+              background-size: 100%;
+              border: 0px solid #a07062;
+            }
+            & > div:nth-child(1):hover {
+              cursor: pointer;
+              background-size: 120%;
+              border: 10px solid #a07062;
+              transition: ease 0.7s;
+            }
+          }
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
+              background-image: url("../img/main/menu_coffee.png");
+            }
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              background-image: url("../img/main/menu_juice.png");
+            }
+          }
+          & > div:nth-child(3) {
+            & > div:nth-child(1) {
+              background-image: url("../img/main/menu_tea.png");
+            }
+          }
+          & > div:nth-child(4) {
+            & > div:nth-child(1) {
+              background-image: url("../img/main/menu_dessert.png");
+            }
+          }
+        }
+      }
+    }
+    // ! menu 끝
   }
 }
 // *타블렛
@@ -232,6 +354,124 @@ body {
         }
       }
       // ! about cafe loa 끝
+      // ? menu banner시작
+      & > section:nth-child(6) {
+        margin-top: 15vh;
+        width: 100vw;
+        height: 270px;
+        background-image: url("../img/main/menu_banner.png");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 36px;
+        & > div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            & > .line {
+              margin: 20px 0;
+              width: 400px;
+              border-bottom: 1px solid;
+            }
+            & > div:nth-child(1) {
+              position: relative;
+              left: -50px;
+            }
+            & > div:nth-child(3) {
+              position: relative;
+              left: 0px;
+            }
+            & > div {
+              color: #fff;
+              margin-right: 20px;
+              & > h1:nth-child(1) {
+                margin-bottom: 10px;
+              }
+              & > p {
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+      // ! menu banner 끝
+      // ? menu 시작
+      & > section:nth-child(7) {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        background-image: url("../img/main/been_bg_tablet.png");
+        background-size: contain;
+        padding-top: 15vh;
+        padding-bottom: 10vh;
+        & > div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & > div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          & > #menu-list {
+            width: 100%;
+            padding: 0 36px;
+            margin-top: 110px;
+            display: flex;
+            justify-content: space-between;
+            & > div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              & > div:nth-child(1) {
+                border-radius: 50%;
+                width: 20vw;
+                height: 20vw;
+                margin-bottom: 25px;
+                box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
+                background-position: center bottom;
+                background-size: 100%;
+                border: 0px solid #a07062;
+              }
+              & > div:nth-child(1):hover {
+                cursor: pointer;
+                background-size: 120%;
+                border: 10px solid #a07062;
+                transition: ease 0.7s;
+              }
+            }
+            & > div:nth-child(1) {
+              & > div:nth-child(1) {
+                background-image: url("../img/main/menu_coffee.png");
+              }
+            }
+            & > div:nth-child(2) {
+              & > div:nth-child(1) {
+                background-image: url("../img/main/menu_juice.png");
+              }
+            }
+            & > div:nth-child(3) {
+              & > div:nth-child(1) {
+                background-image: url("../img/main/menu_tea.png");
+              }
+            }
+            & > div:nth-child(4) {
+              & > div:nth-child(1) {
+                background-image: url("../img/main/menu_dessert.png");
+              }
+            }
+          }
+        }
+      }
+      // ! menu 끝
     }
   }
 }
@@ -352,6 +592,124 @@ body {
         }
       }
       // ! about cafe loa 끝
+      // ? menu banner시작
+      & > section:nth-child(6) {
+        margin-top: 15vh;
+        width: 100vw;
+        height: 140px;
+        background-image: url("../img/main/menu_banner.png");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+        & > div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            & > .line {
+              margin: 20px 0;
+              width: 250px;
+              border-bottom: 1px solid;
+            }
+            & > div:nth-child(1) {
+              position: relative;
+              left: 0px;
+            }
+            & > div:nth-child(3) {
+              position: relative;
+              left: 0px;
+            }
+            & > div {
+              color: #fff;
+              margin-right: 45px;
+              & > h1:nth-child(1) {
+                margin-bottom: 10px;
+              }
+              & > p {
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+      // ! menu banner 끝
+      // ? menu 시작
+      & > section:nth-child(7) {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        background-image: none;
+        padding-top: 15vh;
+        padding-bottom: 10vh;
+        & > div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & > div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          & > #menu-list {
+            width: 100%;
+            padding: 0 24px;
+            margin-top: 70px;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 1fr 1fr;
+            & > div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              & > div:nth-child(1) {
+                border-radius: 50%;
+                width: 40vw;
+                height: 40vw;
+                margin-bottom: 25px;
+                box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
+                background-position: center bottom;
+                background-size: 100%;
+                border: 0px solid #a07062;
+              }
+              & > div:nth-child(1):hover {
+                cursor: pointer;
+                background-size: 120%;
+                border: 5px solid #a07062;
+                transition: ease 0.7s;
+              }
+            }
+            & > div:nth-child(1) {
+              & > div:nth-child(1) {
+                background-image: url("../img/main/menu_coffee.png");
+              }
+            }
+            & > div:nth-child(2) {
+              & > div:nth-child(1) {
+                background-image: url("../img/main/menu_juice.png");
+              }
+            }
+            & > div:nth-child(3) {
+              & > div:nth-child(1) {
+                background-image: url("../img/main/menu_tea.png");
+              }
+            }
+            & > div:nth-child(4) {
+              & > div:nth-child(1) {
+                background-image: url("../img/main/menu_dessert.png");
+              }
+            }
+          }
+        }
+      }
+      // ! menu 끝
     }
   }
 }

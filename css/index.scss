@@ -94,14 +94,27 @@ body {
               height: 232px;
               margin-top: -96px;
             }
-            & > div:nth-child(3) {
+            & > a {
               width: 282px;
               height: 72px;
               display: flex;
               align-items: center;
               justify-content: space-between;
               padding: 0 30px;
-              border: 1px solid black;
+              border: 1px solid #362323;
+              transition: background-color 1s ease;
+            }
+            & > a:hover {
+              background-color: #362323;
+              color: #fff;
+              transition: color 1s;
+              // animation-name: focus;
+              // animation-duration: 1s;
+              // animation-fill-mode: forwards;
+              & > h3 {
+                color: #fff;
+                transition: color 1s;
+              }
             }
           }
           & > article:nth-child(2) {
@@ -149,13 +162,16 @@ body {
             left: 200px;
           }
           & > div {
-            color: #fff;
             margin-right: 36px;
+            & > h1 {
+              color: #fff;
+            }
             & > h1:nth-child(1) {
               margin-bottom: 8px;
             }
             & > p {
               margin-top: 16px;
+              color: #fff;
             }
           }
         }
@@ -356,7 +372,7 @@ body {
             }
             & > div:nth-child(1) {
               position: relative;
-              left: 64px;
+              left: 48px;
               background-image: url("../img/main/gallery_01.png");
             }
             & > div:nth-child(2) {
@@ -365,6 +381,8 @@ body {
               z-index: 1;
               background-image: url("../img/main/gallery_02.png");
               background-size: 98.5%;
+              position: relative;
+              left: -8px;
             }
             & > div:nth-child(3) {
               position: relative;
@@ -372,7 +390,7 @@ body {
               background-image: url("../img/main/gallery_03.png");
             }
           }
-          & > div:nth-child(3) {
+          & > a {
             width: 282px;
             height: 72px;
             border: 1px solid #fff;
@@ -382,6 +400,25 @@ body {
             padding: 0 36px;
             margin-top: 40px;
             color: #fff;
+            transition: background-color 1s ease;
+            background-color: none;
+
+            & > h3 {
+              color: #fff;
+            }
+          }
+          & > a:hover {
+            background-color: #362323;
+
+            color: #fff;
+            transition: color 1s;
+            // animation-name: focus;
+            // animation-duration: 1s;
+            // animation-fill-mode: forwards;
+            & > h3 {
+              color: #fff;
+              transition: color 1s;
+            }
           }
         }
       }
@@ -395,6 +432,41 @@ body {
       }
     }
     // ! gallery 끝
+    // ? 환경배너 시작
+    & > section:nth-child(10) {
+      margin-top: 200px;
+      width: 100vw;
+      height: 360px;
+      background-image: url("../img/main/main_eco_bg.png");
+      background-size: cover;
+      background-position: center;
+      background-color: #300a00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > div {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & > h1 {
+          text-align: center;
+          color: #fff;
+        }
+        & > h1:nth-child(1) {
+          margin-bottom: 16px;
+        }
+        & > .line {
+          width: 625px;
+          margin: 36px 0;
+        }
+        & > p {
+          color: #fff;
+        }
+      }
+    }
+    // ! 환경배너 끝
   }
 }
 // *타블렛
@@ -494,7 +566,7 @@ body {
                 height: 25vh;
                 margin-top: -5vh;
               }
-              & > div:nth-child(3) {
+              & > a {
                 width: 260px;
                 height: 60px;
                 display: flex;
@@ -765,6 +837,8 @@ body {
                 z-index: 1;
                 background-size: 98.5%;
                 background-image: url("../img/main/gallery_02.png");
+                position: relative;
+                left: -0px;
               }
               & > div:nth-child(3) {
                 position: relative;
@@ -772,7 +846,7 @@ body {
                 background-image: url("../img/main/gallery_03.png");
               }
             }
-            & > div:nth-child(3) {
+            & > a {
               width: 282px;
               height: 72px;
               border: 1px solid #fff;
@@ -795,6 +869,42 @@ body {
         }
       }
       // ! gallery 끝
+      // ? 환경배너 시작
+      & > section:nth-child(10) {
+        margin-top: 15vh;
+        width: 100vw;
+        height: 256px;
+        background-image: url("../img/main/main_eco_bg.png");
+        background-size: cover;
+        background-position: center;
+        background-color: #300a00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 36px;
+        & > div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          & > h1 {
+            text-align: center;
+            color: #fff;
+          }
+          & > h1:nth-child(1) {
+            margin-bottom: 16px;
+          }
+          & > .line {
+            width: 625px;
+            margin: 36px 0;
+          }
+          & > p {
+            color: #fff;
+          }
+        }
+      }
+      // ! 환경배너 끝
     }
   }
 }
@@ -893,7 +1003,7 @@ body {
                   margin-top: 2vh;
                 }
               }
-              & > div:nth-child(3) {
+              & > a {
                 margin-top: 20vh;
                 width: 140px;
                 height: 60px;
@@ -1112,10 +1222,21 @@ body {
                   display: flex;
                   justify-content: flex-end;
                   align-items: center;
-                  border: 1px solid #000;
+                  border: 1px solid #362323;
                   justify-content: center;
+                  transition: background-color 1s ease;
+
                   & > i {
                     display: none;
+                  }
+                }
+                & > a:hover {
+                  background-color: #362323;
+                  color: #fff;
+                  transition: color 1s;
+                  & > h3 {
+                    color: #fff;
+                    transition: color 1s;
                   }
                 }
               }
@@ -1179,6 +1300,8 @@ body {
                 z-index: 1;
                 background-size: 98.5%;
                 background-image: url("../img/main/gallery_02.png");
+                position: relative;
+                left: -0px;
               }
               & > div:nth-child(3) {
                 position: relative;
@@ -1186,15 +1309,17 @@ body {
                 background-image: url("../img/main/gallery_03.png");
               }
             }
-            & > div:nth-child(3) {
-              border: 1px solid #000;
+            & > a {
+              border: 1px solid #362323;
               display: flex;
               justify-content: center;
               align-items: center;
               padding: 0 36px;
-              color: #000;
               width: 152px;
               height: 56px;
+              & > h3 {
+                color: #362323;
+              }
               & > i {
                 display: none;
               }
@@ -1211,6 +1336,42 @@ body {
         }
       }
       // ! gallery 끝
+      // ? 환경배너 시작
+      & > section:nth-child(10) {
+        margin-top: 25vh;
+        width: 100vw;
+        height: 160px;
+        background-image: url("../img/main/main_eco_bg.png");
+        background-size: cover;
+        background-position: center;
+        background-color: #300a00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+        & > div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          & > h1 {
+            text-align: center;
+            color: #fff;
+          }
+          & > h1:nth-child(1) {
+            margin-bottom: 8px;
+          }
+          & > .line {
+            width: 232px;
+            margin: 16px 0;
+          }
+          & > p {
+            color: #fff;
+          }
+        }
+      }
+      // ! 환경배너 끝
     }
   }
 }

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/from.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- 레이아웃을 위한 그리드 -->
+      <div id="grid">
+        <div id="pc_grid">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div id="tablet_grid">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div id="mobile_grid">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <!-- // 레이아웃을 위한 그리드 -->
+      <!-- nav -->
+      <nav class="display_pc">
+        <a id="logo" href="#">CAFE LOA</a>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./menu.html">MENU</a></li>
+          <li><a href="#">STORE</a></li>
+          <li><a href="#">EVENT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div id="nav_sns">
+          <a href="#">
+            <img src="./img/icon/Instagram.png" alt="인스타그램 이동" />
+          </a>
+          <a href="#">
+            <img src="./img/icon/Facebook.png" alt="페이스북 이동" />
+          </a>
+        </div>
+      </nav>
+      <nav class="display_tablet display_mobile">
+        <div id="menu_off">
+          <a href="#">CAFE LOA</a>
+          <div id="hamburger_menu">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div id="menu_on">
+          <div id="menu_close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul id="menu_list">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <div>
+            <a href="#">
+              <img src="./img/icon/Instagram.png" alt="인스타그램 이동" />
+            </a>
+            <a href="#">
+              <img src="./img/icon/Facebook.png" alt="페이스북 이동" />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- //nav -->
+      <!-- 상단 배너 -->
+      <section id="top_banner">
+        <div>
+          <div class="line"></div>
+          <div>
+            <h1>카페 로아의</h1>
+            <h1>프리미엄 커피</h1>
+            <p class="display_pc display_tablet">
+              차분한 맛의 커피는 일상의 풍미를 증가시킵니다.
+            </p>
+          </div>
+          <div class="line"></div>
+        </div>
+      </section>
+      <!-- // 상단 배너 -->
+      <!-- menu nav -->
+      <section id="menu_nav">
+        <div id="menu_nav_pc" class="display_pc">
+          <a href="#">
+            <h3>Coffee</h3>
+            <div></div>
+          </a>
+          <a href="#">
+            <h3>Juice</h3>
+            <div></div>
+          </a>
+
+          <a href="#">
+            <h3>Tea</h3>
+            <div></div>
+          </a>
+          <a href="#">
+            <h3>Dessert</h3>
+            <div></div>
+          </a>
+        </div>
+        <div id="menu_nav_mobile" class="display_tablet display_mobile">
+          <a href="#">
+            <h3>Coffee</h3>
+          </a>
+          <a href="#">
+            <h3>Juice</h3>
+          </a>
+          <a href="#">
+            <h3>Tea</h3>
+          </a>
+          <a href="#">
+            <h3>Dessert</h3>
+          </a>
+        </div>
+      </section>
+      <!-- // menu nav -->
+      <!-- 메뉴 목록 -->
+      <section id="menu_coffee">
+        <div>
+          <div>
+            <img src="./img/menu/americano.png" alt="아메리카노(Hot /  Ice)" />
+            <p>아메리카노(Hot / Ice)</p>
+          </div>
+          <div>
+            <img src="./img/menu/einspener.png" alt="아인슈페너(Hot /  Ice)" />
+            <p>아인슈페너(Hot / Ice)</p>
+          </div>
+          <div>
+            <img src="./img/menu/espresso.png" alt="에스프레소(Hot only)" />
+            <p>에스프레소(Hot only)</p>
+          </div>
+          <div>
+            <img src="./img/menu/cafe_latte.png" alt="카페라떼(Hot /  Ice)" />
+            <p>카페라떼(Hot / Ice)</p>
+          </div>
+          <div>
+            <img src="./img/menu/cappuccino.png" alt="카푸치노(Hot only)" />
+            <p>카푸치노(Hot only)</p>
+          </div>
+          <div>
+            <img src="./img/menu/cold_brew.png" alt="콜드브루" />
+            <p>콜드브루</p>
+          </div>
+          <div>
+            <img
+              src="./img/menu/cold_brew_hazelnut_latte.png"
+              alt="콜드브루 헤이즐넛 라떼"
+            />
+            <p>콜드브루 헤이즐넛 라떼</p>
+          </div>
+          <div>
+            <img
+              src="./img/menu/brown_sugar_bubble_latte.png"
+              alt="브라운 슈가 버블 라떼"
+            />
+            <p>브라운 슈가 버블 라떼</p>
+          </div>
+          <div>
+            <img src="./img/menu/cafe_mocha.png" alt="카페모카(Hot /  Ice)" />
+            <p>카페모카(Hot / Ice)</p>
+          </div>
+          <div>
+            <img
+              src="./img/menu/caramel_macchiato.png"
+              alt="카라멜 마끼아또(Hot /  Ice)"
+            />
+            <p>카라멜 마끼아또(Hot / Ice)</p>
+          </div>
+          <div>
+            <img
+              src="./img/menu/mocha_frappeno.png"
+              alt="모카 프라페노(Ice only)"
+            />
+            <p>모카 프라페노(Ice only)</p>
+          </div>
+        </div>
+      </section>
+      <!-- // 메뉴 목록 -->
+    </div>
+  </body>
+</html>

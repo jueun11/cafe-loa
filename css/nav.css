@@ -106,7 +106,8 @@ nav > #nav_sns > a:nth-last-child(1) {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
-    transition: left 1s;
+    opacity: 0;
+    transition: 0s;
   }
   nav > #menu_on > div:nth-child(1) {
     width: 100vw;

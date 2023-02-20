@@ -13,6 +13,8 @@ let scrollPosition = 0;
 
 function HamburgerMenuOn(event) {
   MenuList.style.left = "0vw";
+  MenuList.style.opacity = 1;
+  MenuList.style.transition = "left 1s";
   scrollPosition = window.pageYOffset;
   body.style.overflow = "hidden";
   body.style.position = "fixed";
@@ -30,6 +32,9 @@ function HamburgerMenuClose(event) {
   body.style.removeProperty("top");
   body.style.removeProperty("width");
   window.scrollTo(0, scrollPosition);
+  setTimeout(() => {
+    MenuList.style.transition = "0s";
+  }, 1000);
 }
 
 MenuClose.addEventListener("click", HamburgerMenuClose);

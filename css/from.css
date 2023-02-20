@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+@keyframes focus {
+  from {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #362323;
+    color: #362323;
+  }
+  to {
+    background-color: #362323;
+    border: 1px solid #362323;
+    color: #fff;
+  }
+}
 :root {
   --smallFont: 16px;
   --regularFont: 20px;
@@ -13,7 +25,7 @@
 }
 
 .line {
-  border-bottom: 3px solid;
+  border-bottom: 2px solid;
   -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
      border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
   border-image-slice: 1;
@@ -22,16 +34,19 @@
 h1 {
   font-size: var(--LargeFontPlus);
   font-weight: 700;
+  color: #362323;
 }
 
 h2 {
   font-size: var(--LargeFont);
   font-weight: 500;
+  color: #362323;
 }
 
 h3 {
   font-size: var(--regularFont);
   font-weight: 500;
+  color: #362323;
 }
 
 p {
@@ -39,11 +54,12 @@ p {
   font-family: "Open Sans", sans-serif;
   line-height: 30px;
   font-weight: 500;
+  color: #362323;
 }
 
 .lineBlack {
   width: 78px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #362323;
   margin-top: 15px;
 }
 

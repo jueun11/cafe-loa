@@ -6,7 +6,20 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 //* pc
+@keyframes focus {
+  from {
+    background-color: rgba(255, 255, 255, 0);
 
+    border: 1px solid #362323;
+    color: #362323;
+  }
+  to {
+    background-color: #362323;
+
+    border: 1px solid #362323;
+    color: #fff;
+  }
+}
 :root {
   --smallFont: 16px;
   --regularFont: 20px;
@@ -14,7 +27,7 @@
   --LargeFontPlus: 36px;
 }
 .line {
-  border-bottom: 3px solid;
+  border-bottom: 2px solid;
   // border-image: linear-gradient(
   //   to right,
   //   rgba(253, 230, 182, 0),
@@ -32,16 +45,19 @@
 h1 {
   font-size: var(--LargeFontPlus);
   font-weight: 700;
+  color: #362323;
 }
 
 h2 {
   font-size: var(--LargeFont);
   font-weight: 500;
+  color: #362323;
 }
 
 h3 {
   font-size: var(--regularFont);
   font-weight: 500;
+  color: #362323;
 }
 
 p {
@@ -49,10 +65,11 @@ p {
   font-family: "Open Sans", sans-serif;
   line-height: 30px;
   font-weight: 500;
+  color: #362323;
 }
 .lineBlack {
   width: 78px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #362323;
   margin-top: 15px;
 }
 // *태블릿
